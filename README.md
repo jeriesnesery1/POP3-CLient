@@ -44,11 +44,11 @@ using the DELE button.
 its TCP connection with the client and expunge any messages flagged for deletion.
 
 ![image](https://user-images.githubusercontent.com/75926858/213996948-4699ebe3-e659-49cf-8830-096eec798192.png)
-#RAW COMMAND
+# RAW COMMAND
 In addition to the buttons, the bottom TextField in the Raw Command Entry lets the user send raw
 commands to the server, not just using the buttons.
 
-#Server Responses
+# Server Responses
 The POP3 protocol specifies that all commands result in either single or multiline responses. Multiline
 responses end with a line with a single period (.). The client could therefore use a state-based algorithm to
 listen for either a single line response or a multiline response after each command.
