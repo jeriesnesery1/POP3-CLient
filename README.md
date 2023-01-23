@@ -2,11 +2,14 @@
 ![image](https://user-images.githubusercontent.com/75926858/213996401-a27a1ef0-176d-4340-8d84-1581d9ce4ccc.png)
 When the user clicks on “Connect”, the tool attempts to connect to the server identified in the POP Server
 field on port 110 (the default POP3 port).
+
 Once connected, the tool enables the user to perform the following actions using the buttons shown and
 changes the text on the Connect button to Disconnect. Pushing it again causes the session to be closed
 immediately and disables the other buttons.
+
 All commands entered, whether via buttons or the raw entry TextField will be echoed in the middle “log”
 TextArea.
+
 ![image](https://user-images.githubusercontent.com/75926858/213996491-3a2d20f7-ce9a-4592-bc1e-a41e65b314d0.png)
  **Protocol Command Buttons**
 **USER** sends the USER command with the value shown in the User Name field above. It is used to define
@@ -41,11 +44,11 @@ using the DELE button.
 its TCP connection with the client and expunge any messages flagged for deletion.
 
 ![image](https://user-images.githubusercontent.com/75926858/213996948-4699ebe3-e659-49cf-8830-096eec798192.png)
-**RAW COMMAND**
+#**RAW COMMAND**
 In addition to the buttons, the bottom TextField in the Raw Command Entry lets the user send raw
 commands to the server, not just using the buttons.
 
-**Server Responses**
+#**Server Responses**
 The POP3 protocol specifies that all commands result in either single or multiline responses. Multiline
 responses end with a line with a single period (.). The client could therefore use a state-based algorithm to
 listen for either a single line response or a multiline response after each command.
