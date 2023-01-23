@@ -55,3 +55,6 @@ listen for either a single line response or a multiline response after each comm
 Despite this option, to make the client simpler (and not get into a state-machine like algorithm for listening
 for responses), we will implement a separate listening thread which will display any lines received from the
 server in the central “log” TextArea on the bottom.
+
+# NOTE
+you might need to figure your javafx here is a guide on how to do it https://openjfx.io/openjfx-docs/
